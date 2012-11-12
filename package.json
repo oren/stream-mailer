@@ -1,0 +1,23 @@
+{
+  "name": "stream-mailer",
+  "version": "0.1.0",
+  "description": "Send an email when a regex pattern appear in a stream",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oren/stream-mailer.git"
+  },
+  "keywords": [
+    "stream",
+    "email"
+  ],
+  "author": "Oren Golan",
+  "license": "BSD",
+  "dependencies": {
+    "nodemailer": "~0.3.31"
+  }
+}
