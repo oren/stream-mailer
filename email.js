@@ -15,7 +15,7 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 // setup e-mail data with unicode symbols
 var mailOptions = {
     from: "chat <chat@test.com>",
-    to: "orengolan@gmail.com",
+    to: config.emailUser,
     subject: "new message",
     text: "yeah!", // plaintext body
 }
