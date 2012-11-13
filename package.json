@@ -2,7 +2,7 @@
   "name": "stream-mailer",
   "version": "0.1.0",
   "description": "Send an email when a regex pattern appear in a stream",
-  "main": "server.js",
+  "bin": { "stream-mailer" : "node server.js" },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
