@@ -14,9 +14,9 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 
 var sendEmail = function(text) {
   var mailOptions = {
-    from: "chat <chat@test.com>",
+    from: "chat",
     to: config.emailUser,
-    subject: "chat message",
+    subject: text,
     text: text, // plaintext body
   }
 
