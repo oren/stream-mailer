@@ -8,10 +8,9 @@ var regex = new RegExp(config.findText, "g");
 var found = false;
 
 reader.on('line', function(line) {
-  found = regex.test(line);
+  found = regex.exec(line);
   if(found) {
     sendEmail(found['input']);
-    console.log('line', line);
   }
 }).on('close', function() {
   console.log('stream end');
