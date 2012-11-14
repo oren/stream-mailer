@@ -12,15 +12,14 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
     }
 });
 
-// setup e-mail data with unicode symbols
-var mailOptions = {
+var sendEmail = function(text) {
+  var mailOptions = {
     from: "chat <chat@test.com>",
     to: config.emailUser,
-    subject: "new message",
-    text: "yeah!", // plaintext body
-}
+    subject: "chat message",
+    text: text, // plaintext body
+  }
 
-var sendEmail = function() {
   // send mail with defined transport object
   smtpTransport.sendMail(mailOptions, function(error, response){
       if(error){

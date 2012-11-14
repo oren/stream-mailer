@@ -10,7 +10,7 @@ var found = false;
 reader.on('line', function(line) {
   found = regex.test(line);
   if(found) {
-    sendEmail();
+    sendEmail(found['input']);
     console.log('line', line);
   }
 }).on('close', function() {
