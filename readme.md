@@ -1,7 +1,7 @@
 # stream-mailer
 Send an email when a regex pattern appear in a stream
 
-[![NPM](http://nodei.co/npm/stream-mailer.png)](http://nodei.co/npm/stream-mailer/) 
+[![NPM](https://nodei.co/npm/stream-mailer.png)](https://nodei.co/npm/stream-mailer/) 
 
 ## Index
 
