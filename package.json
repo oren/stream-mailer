@@ -1,6 +1,6 @@
 {
   "name": "stream-mailer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Send an email when a regex pattern appear in a stream",
   "bin": { "stream-mailer" : "./server.js" },
   "scripts": {
