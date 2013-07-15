@@ -1,11 +1,21 @@
+#!/usr/bin/env node
+
+var config = null;
+
+if (process.env.CONFIG_PATH) {
+  config = require(process.env.CONFIG_PATH + '/config.js');
+} else {
+  throw new Error('CONFIG_PATH environment variable does\'t exist');
+};
+
 // my modules
 var LineReader = require('./lineReader.js');
-var sendEmail = require('./email');
-var config = require('./config.js');
-
+var sendEmail = require('./email')(config);
 var reader = new LineReader();
-var regex = new RegExp(config.findText, "g");
 var found = false;
+
+
+var regex = new RegExp(config.findText, "g");
 
 reader.on('line', function(line) {
   found = regex.exec(line);

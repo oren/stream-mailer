@@ -2,4 +2,4 @@
 
 LOGS=/home/oren/.weechat/logs/*
 
-tail -f $LOGS | node /home/oren/misc/projects/stream-mailer/server.js
+tail -f $LOGS | stream-mailer

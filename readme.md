@@ -7,25 +7,22 @@ Send an email when a regex pattern appear in a stream
 
 * [Example](#example)
 * [Install](#install)
+* [Run](#run)
 
 ### Example
 
 According to config.js, we will find all "hello kitty" strings in any logs files in .weechat folder and send email to kitty@gmail.com
 
-    tail .weechat/logs/* | stream-mailer
+    CONFIG_PATH='absolute/path/to/config.js' tail .weechat/logs/* | stream-mailer
 
 ### Install
 
     npm install stream-mailer -g
 
-### Configure pattern to search for and Email credentials (config.js)
-
-    cp config.example.js config.js
-
-### Run as daemon
-
-    forever start -c sh bin/start-production.sh
+### Run
+    
+    CONFIG_PATH='absolute/path/to/config.js' forever start -c sh bin/start-production.sh
 
 ### TODO
 
-separate into 2 modules
+Separate into 2 modules

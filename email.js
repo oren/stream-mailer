@@ -1,7 +1,7 @@
 // packages from npm
 var nodemailer = require("nodemailer");
 
-var config = require('./config.js');
+var config = require(process.env.CONFIG_PATH + '/config.js');
 
 // create reusable transport method (opens pool of SMTP connections)
 var smtpTransport = nodemailer.createTransport("SMTP",{
