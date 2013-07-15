@@ -13,7 +13,7 @@ Send an email when a regex pattern appear in a stream
 
 According to config.js, we will find all "hello kitty" strings in any logs files in .weechat folder and send email to kitty@gmail.com
 
-    CONFIG_PATH='absolute/path/to/config.js' tail .weechat/logs/* | stream-mailer
+    tail ~/.weechat/logs/* | CONFIG_PATH='absolute/path/to/config.js' stream-mailer
 
 ### Install
 

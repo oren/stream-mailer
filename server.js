@@ -10,7 +10,7 @@ if (process.env.CONFIG_PATH) {
 
 // my modules
 var LineReader = require('./lineReader.js');
-var sendEmail = require('./email')(config);
+var sendEmail = require('./email');
 var reader = new LineReader();
 var found = false;
 
